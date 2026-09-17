@@ -23,10 +23,10 @@ See [action.yml](action.yml)
 ## Basic
 ```yaml
 steps:
-- uses: actions/checkout@v4
+- uses: actions/checkout@v7
 
 - name: Set up JDK 17
-  uses: actions/setup-java@v4
+  uses: actions/setup-java@v6
   with:
     java-version: '17'
     distribution: 'temurin'
@@ -85,7 +85,7 @@ and `uiautomatorviewer` were dropped without one.
 Command line tools are versioned using two variables - short and long.
 Long one is the build number, used in the zip URL, short one is the human friendly version name.
 
-By default, setup-android installs version 14742923 (short version 20.0).
+By default, setup-android installs version 15859902 (short version 22.0).
 
 To install a different version, call setup-android with desired long version as the input parameter `cmdline-tools-version`:
 ```yaml
@@ -98,6 +98,7 @@ To install a different version, call setup-android with desired long version as 
 #### Version table
 | Short version | Long version |
 |---------------| --- |
+| 22.0          | 15859902 |
 | 20.0          | 14742923 |
 | 16.0          | 12266719 |
 | 13.0          | 11479570 |
